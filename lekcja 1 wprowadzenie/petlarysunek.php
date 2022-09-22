@@ -2,33 +2,30 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>pętla rysowanie</title>
+	<title>petla rysowanie</title>
 </head>
 <body>
 
 	<?php
 		
-		for($wysokosc = 1; $wysokosc <= 6; ++$wysokosc)
+		for($wysokosc = 1; $wysokosc <= 5; ++$wysokosc)
 		{
 			
-			for($szerokosc = 1; $szerokosc <= 5; ++$szerokosc)
+			for($szerokosc = 1; $szerokosc <= 4; ++$szerokosc)
 			{
-				if($wysokosc == 1 OR $wysokosc == 6)
+				if($wysokosc == 1 OR $wysokosc == 5)
 				{
 					echo "*";
 				}
-				
-				elseif($szerokosc == 1 OR $szerokosc == 5)
+				elseif($szerokosc == 1 OR $szerokosc == 4)
 				{
 					echo "*";
 				}
-				
-				else
+				else 
 				{
-					echo "_";
+					echo '_';
 				}
 			}
-			
 			echo "<br>";
 		}
 		
